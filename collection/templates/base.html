@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<head>
+    <title>
+        {% block title %}
+            Fiddleford Fruit
+        {% endblock title %}
+    </title>
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% block header %}{% endblock header %}
+</head>
+<body>
+        <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}">About</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                        <h1><a href="/">Fiddleford Fruit</a></h1>
+                </div>
+            </header>
+    {% block content %}{% endblock content %}
+    {% block footer %}{% endblock footer %}
+</body>

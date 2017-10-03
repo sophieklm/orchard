@@ -1,9 +1,14 @@
-{% load staticfiles %}
-<head>
-    <title>Fiddleford Fruit</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-<body>
-    <h1>Fiddleford Fruit</h1>
-    <p>Apples and Pears</p>
-</body>
+{% extends 'base.html' %}
+{% load humanize %}
+{% block title %}
+    Home - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <p>Apples and Pears (and Gages)</p>
+    <p>This is the name of the thing: {{ thing }}</p>
+    <div class="image-boundary">
+        <img src="../static/images/press.jpg">
+    </div>
+
+{% endblock content %}
