@@ -3,17 +3,27 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
-class Type(models.Model):
-    type = models.CharField(max_length=255)
-    fruit = models.CharField(max_length=255)
+class Tree(models.Model):
 
-    def __unicode__(self):
-        return u'{0}'.format(self.type)
+    FRUIT = (
+        ('apple', 'Apple'),
+        ('pear', 'Pear'),
+        ('gage', 'Gage'),
+    )
 
-class Fruit(models.Model):
+    TYPES = (
+        ('eater', 'Eater'),
+        ('crab', 'Crab'),
+        ('perry', 'Perry'),
+        ('cider', 'Cider'),
+        ('juicer', 'Juicer'),
+        ('cooker', 'Cooker'),
+    )
+
+
     variety = models.CharField(max_length=255, unique=True)
-    type = models.CharField(max_length=255)
-    fruit = models.CharField(max_length=255)
+    type = models.CharField(max_length=255, choices=TYPES)
+    fruit = models.CharField(max_length=255, choices=FRUIT)
     harvest = models.CharField(max_length=255, blank=True)
     taste = models.CharField(max_length=255, blank=True)
     description = models.TextField(blank=True)
