@@ -5,10 +5,34 @@
 {% endblock title %}
 
 {% block content %}
-    <p>Apples and Pears (and Gages)</p>
-    <p>This is the name of the thing: {{ thing }}</p>
+    <h1>Apples and Pears</h1>
+    <h2>(and Gages)</h2>
     <div class="image-boundary">
         <img src="../static/images/press.jpg">
     </div>
+
+    {% for tree in trees %}
+        {% if tree.fruit == "Apple" %}
+            <h2>Apples</h2>
+            <h3>{{ tree.variety }}</h3>
+            <p>{{ tree.type }}</p>
+            <p>{{ tree.fruit }}</p>
+            <p>{{ tree.harvest }}</p>
+            <p>{{ tree.taste }}</p>
+            <p>{{ tree.description }}</p>
+        {% endif %}
+    {% endfor %}
+    {% for tree in trees %}
+        {% if tree.fruit == "Pear" %}
+            <h2>Pears</h2>
+            <h3>{{ tree.variety }}</h3>
+            <p>{{ tree.type }}</p>
+            <p>{{ tree.fruit }}</p>
+            <p>{{ tree.harvest }}</p>
+            <p>{{ tree.taste }}</p>
+            <p>{{ tree.description }}</p>
+        {% endif %}
+    {% endfor %}
+
 
 {% endblock content %}

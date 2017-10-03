@@ -6,20 +6,19 @@ from django.db import models
 class Tree(models.Model):
 
     FRUIT = (
-        ('apple', 'Apple'),
-        ('pear', 'Pear'),
-        ('gage', 'Gage'),
+        ('Apple', 'Apple'),
+        ('Pear', 'Pear'),
+        ('Gage', 'Gage'),
     )
 
     TYPES = (
-        ('eater', 'Eater'),
-        ('crab', 'Crab'),
-        ('perry', 'Perry'),
-        ('cider', 'Cider'),
-        ('juicer', 'Juicer'),
-        ('cooker', 'Cooker'),
+        ('Eater', 'Eater'),
+        ('Crab', 'Crab'),
+        ('Perry', 'Perry'),
+        ('Cider', 'Cider'),
+        ('Juicer', 'Juicer'),
+        ('Cooker', 'Cooker'),
     )
-
 
     variety = models.CharField(max_length=255, unique=True)
     type = models.CharField(max_length=255, choices=TYPES)
