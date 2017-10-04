@@ -1,5 +1,5 @@
-{% load staticfiles %}
-{% load bootstrap_toolkit %}
+{% load static %}
+{% load bootstrap3 %}
 <head>
     <title>
         {% block title %}
@@ -10,29 +10,36 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery=1 %}
     {% block header %}{% endblock header %}
 </head>
 <body>
-        <header>
-                <div class="navbar navbar-fixed-top">
-                        <div class="navbar-inner">
-                            <div class="container">
-                                    <a class="brand" href="/">Fiddleford Fruit</a>
-                         <ul class ="nav">
-                        <li>
-                            <a href="{% url 'home' %}">Home</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'fruit' %}">Fruit</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'contact' %}">Contact</a>
-                        </li>
-                    </ul>
+        <header class = "navbar navbar-inverse navbar-fixed-top" role = "banner">
+                <div class = "container">
+                    <div class ="navbar-header">
+                        <button type = "button" class= "navbar-toggle" data-toggle = "collapse" data-target = "#dropdown">
+                            <span class = "sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">Fiddleford Orchard</a>
+                    </div>
+
+                    <div class = "collapse navbar-collapse" id = "dropdown">
+
+                        <ul class = "nav navbar-nav navbar-right" role = "navigation">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'fruit' %}">Fruit</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+
+                    </div>
                 </div>
-            </div>
-        </div>
-            </header>
+                </header>
+    <div class="container">
     {% block content %}{% endblock content %}
+    </div>
     {% block footer %}{% endblock footer %}
 </body>
