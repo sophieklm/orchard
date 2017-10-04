@@ -18,3 +18,9 @@ def fruit(request):
         'gages': gages
 })
 
+def tree_detail(request, slug):
+    tree = Tree.objects.get(slug=slug)
+
+    return render(request, 'fruit/tree_detail.html', {
+        'tree': tree,
+    })

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% block title %}
+    {{ tree.variety }} - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ tree.variety }}</h1>
+    <p>{{ tree.type }}</p>
+    <p>{{ tree.description }}</p>
+    <p>{{ tree.harvest }}</p>
+    <p>{{ tree.taste }}</p>
+
+{% endblock content %}

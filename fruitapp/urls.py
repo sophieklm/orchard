@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^contact/$',
         TemplateView.as_view(template_name='contact.html'),
         name='contact'),
+    url(r'^fruit/(?P<slug>[-\w]+)/$', views.tree_detail, name='tree_detail'),
     url(r'^admin/', admin.site.urls),
 ]
