@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'multiselectfield',
+    'bootstrap_toolkit'
 ]
 
 MIDDLEWARE_CLASSES = [

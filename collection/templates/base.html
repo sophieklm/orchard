@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load bootstrap_toolkit %}
 <head>
     <title>
         {% block title %}
@@ -13,8 +14,11 @@
 </head>
 <body>
         <header>
-                <nav>
-                    <ul>
+                <div class="navbar navbar-fixed-top">
+                        <div class="navbar-inner">
+                            <div class="container">
+                                    <a class="brand" href="/">Fiddleford Fruit</a>
+                         <ul class ="nav">
                         <li>
                             <a href="{% url 'home' %}">Home</a>
                         </li>
@@ -25,10 +29,9 @@
                             <a href="{% url 'contact' %}">Contact</a>
                         </li>
                     </ul>
-                </nav>
-                <div>
-                        <h1><a href="/">Fiddleford Fruit</a></h1>
                 </div>
+            </div>
+        </div>
             </header>
     {% block content %}{% endblock content %}
     {% block footer %}{% endblock footer %}
