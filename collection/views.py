@@ -7,3 +7,14 @@ def index(request):
     return render(request, 'index.html', {
         'trees': trees,
 })
+
+def fruit(request):
+    apples = Tree.objects.filter(fruit='Apple').order_by('fruit')
+    pears = Tree.objects.filter(fruit='Pear').order_by('fruit')
+    gages = Tree.objects.filter(fruit='Gage').order_by('fruit')
+    return render(request, 'fruit.html', {
+        'apples': apples,
+        'pears': pears,
+        'gages': gages
+})
+

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+    Fruit - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>Fruit</h1>
+    <h2>Apples</h2>
+    {% for apple in apples %}
+        <h3>{{ apple.variety }}</h3>
+        <p>{{ apple.type }}</p>
+        <p>{{ apple.harvest }}</p>
+        <p>{{ apple.taste }}</p>
+        <p>{{ apple.description }}</p>
+    {% endfor %}
+    <h2>Pears</h2>
+    {% for pear in pears %}
+        <h3>{{ pear.variety }}</h3>
+        <p>{{ pear.type }}</p>
+        <p>{{ pear.harvest }}</p>
+        <p>{{ pear.taste }}</p>
+        <p>{{ pear.description }}</p>
+    {% endfor %}
+    <h2>Gages</h2>
+    {% for gage in gages %}
+        <h3>{{ gage.variety }}</h3>
+        <p>{{ gage.type }}</p>
+        <p>{{ gage.harvest }}</p>
+        <p>{{ gage.taste }}</p>
+        <p>{{ gage.description }}</p>
+    {% endfor %}
+{% endblock content %}
