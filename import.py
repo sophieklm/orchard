@@ -28,5 +28,5 @@ for row in data:
         tree.fruit = row[6]
         tree.harvest = row[7].split('/')
         tree.taste = row[8]
-        tree.slug = '-'.join((slugify(row[4]), slugify(row[0])))
+        tree.slug = '-'.join((slugify(row[4]), slugify(row[6]), slugify(row[0])))
         tree.save()

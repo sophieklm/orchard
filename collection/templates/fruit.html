@@ -6,38 +6,46 @@
 {% block content %}
     <h1>Fruit</h1>
     <div class="tree">
-        <h2>Apples</h2>
-        {% for apple in apples %}
-            <h3>
-                <a href="{% url 'tree_detail' slug=apple.slug %}">
-                    {{ apple.variety }}
-                </a>
-            </h3>
-            <p>{{ apple.type }}</p>
-            <p>{{ apple.harvest }}</p>
-            <p>{{ apple.taste }}</p>
+        <div class="row">
+        <h2 class="col-md-12">Apples</h2>
+            {% for apple in apples %}
+            <div class="col-md-4">
+                <h3>
+                    <a href="{% url 'tree_detail' slug=apple.slug %}">
+                        {{ apple.variety }}
+                    </a>
+                </h3>
+                <p>{{ apple.type }}</p>
+                <p>{{ apple.harvest }}</p>
+                <p>{{ apple.taste }}</p>
+            </div>
         {% endfor %}
-        <h2>Pears</h2>
-        {% for pear in pears %}
-            <h3>
-                <a href="{% url 'tree_detail' slug=pear.slug %}">
-                    {{ pear.variety }}
-                </a>
-            </h3>
-            <p>{{ pear.type }}</p>
-            <p>{{ pear.harvest }}</p>
-            <p>{{ pear.taste }}</p>
+        <h2 class="col-md-12">Pears</h2>
+            {% for pear in pears %}
+            <div class="col-md-4">
+                <h3>
+                    <a href="{% url 'tree_detail' slug=pear.slug %}">
+                        {{ pear.variety }}
+                    </a>
+                </h3>
+                <p>{{ pear.type }}</p>
+                <p>{{ pear.harvest }}</p>
+                <p>{{ pear.taste }}</p>
+            </div>
         {% endfor %}
-        <h2>Plums</h2>
-        {% for plum in plums %}
-            <h3>
-                <a href="{% url 'tree_detail' slug=plum.slug %}">
-                    {{ plum.variety }}
-                </a>
-            </h3>
-            <p>{{ plum.type }}</p>
-            <p>{{ plum.harvest }}</p>
-            <p>{{ plum.taste }}</p>
+        <h2 class="col-md-12">Plums</h2>
+            {% for plum in plums %}
+            <div class="col-md-4">
+                <h3>
+                    <a href="{% url 'tree_detail' slug=plum.slug %}">
+                        {{ plum.variety }}
+                    </a>
+                </h3>
+                <p>{{ plum.type }}</p>
+                <p>{{ plum.harvest }}</p>
+                <p>{{ plum.taste }}</p>
+            </div>
         {% endfor %}
+        </div>
     </div>
 {% endblock content %}

@@ -4,16 +4,20 @@ from collection.models import Tree
 # Create your views here.
 def index(request):
     trees = Tree.objects.all()
+    varieties = Tree.objects.values('variety').distinct()
+    months = Tree.objects.values('harvest').distinct()
 
     return render(request, 'index.html', {
         'trees': trees,
+        'varieties': varieties,
+        'months': months
 })
 
 def fruit(request):
     trees = Tree.objects.all()
-    apples = Tree.objects.filter(fruit='Apple').order_by('fruit')
-    pears = Tree.objects.filter(fruit='Pear').order_by('fruit')
-    plums = Tree.objects.filter(fruit='Plum').order_by('fruit')
+    apples = Tree.objects.filter(fruit='Apple').order_by('variety')
+    pears = Tree.objects.filter(fruit='Pear').order_by('variety')
+    plums = Tree.objects.filter(fruit='Plum').order_by('variety')
     return render(request, 'fruit.html', {
         'apples': apples,
         'pears': pears,
