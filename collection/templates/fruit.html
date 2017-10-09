@@ -28,16 +28,16 @@
             <p>{{ pear.harvest }}</p>
             <p>{{ pear.taste }}</p>
         {% endfor %}
-        <h2>Gages</h2>
-        {% for gage in gages %}
+        <h2>Plums</h2>
+        {% for plum in plums %}
             <h3>
-                <a href="{% url 'tree_detail' slug=gage.slug %}">
-                    {{ gage.variety }}
+                <a href="{% url 'tree_detail' slug=plum.slug %}">
+                    {{ plum.variety }}
                 </a>
             </h3>
-            <p>{{ gage.type }}</p>
-            <p>{{ gage.harvest }}</p>
-            <p>{{ gage.taste }}</p>
+            <p>{{ plum.type }}</p>
+            <p>{{ plum.harvest }}</p>
+            <p>{{ plum.taste }}</p>
         {% endfor %}
     </div>
 {% endblock content %}
