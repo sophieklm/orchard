@@ -10,13 +10,14 @@ def index(request):
 })
 
 def fruit(request):
+    trees = Tree.objects.all()
     apples = Tree.objects.filter(fruit='Apple').order_by('fruit')
     pears = Tree.objects.filter(fruit='Pear').order_by('fruit')
-    gages = Tree.objects.filter(fruit='Gage').order_by('fruit')
+    plums = Tree.objects.filter(fruit='Plum').order_by('fruit')
     return render(request, 'fruit.html', {
         'apples': apples,
         'pears': pears,
-        'gages': gages
+        'plums': plums
 })
 
 def tree_detail(request, slug):

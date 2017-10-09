@@ -18,3 +18,8 @@ python manage.py runserver --insecure
 deactivate
 ```
 
+Run the importer:
+
+```
+python import.py
+```

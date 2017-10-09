@@ -1,0 +1,75 @@
+id,longitude,latitude,field,name,type,fruit,harvest,taste
+1,-2.27878,50.9162,Orchard,John Downie,Crab,Apple,September,
+2,-2.27869,50.91624,Orchard,Old Crab,Crab,Apple,October,
+3,-2.27877,50.91628,Orchard,Somerset Redstreak,Cider,Apple,October,Bittersweet
+4,-2.27868,50.91632,Orchard,Barland,Perry,Pear,September,Very astringent
+5,-2.27859,50.91636,Orchard,Yarlington Mill,Cider,Apple,September,Bittersweet
+6,-2.2785,50.9164,Orchard,Taynton Squash,Perry,Pear,August,Medium acid tannin
+7,-2.27838,50.91642,Orchard,Beurre Hardy,Eater,Pear,September,Smooth
+8,-2.27894,50.91627,Orchard,Blakeney Red,Perry,Pear,October,Medium sharp
+9,-2.27885,50.91631,Orchard,Sweet Coppin,Cider,Apple,September,Sweet
+10,-2.27876,50.91635,Orchard,Green Horse,Perry,Pear,September/October,Medium sharp
+11,-2.27867,50.91639,Orchard,Crimson King,Cider,Apple,September/October,Sharp
+12,-2.27858,50.91643,Orchard,Butt,Perry,Pear,September,Bitter sharp
+13,-2.27849,50.91647,Orchard,Sweet Huffcap,Perry,Pear,September,Sweet
+14,-2.27902,50.91631,Orchard,Old Tree,Cider,Apple,September,
+15,-2.27893,50.91635,Orchard,Catillac,Cooker,Pear,September,
+16,-2.27884,50.91639,Orchard,Bulmers Norman,Cider,Apple,September,Medium bittersweet
+17,-2.27875,50.91643,Orchard,Big Tree,Cider,Apple,September,
+18,-2.27866,50.91647,Orchard,Tremletts Bitter,Cider,Apple,September,Bittersharp
+19,-2.27857,50.91651,Orchard,Glou Morceau,Eater,Pear,October,Delicate sweet
+20,-2.27848,50.91655,Orchard,Breakwell's Seedling,Cider,Apple,September,Bittersharp
+21,-2.27912,50.91634,Orchard,Barnet,Perry,Pear,September/October,Sweet
+22,-2.27903,50.91638,Orchard,Sheep's Nose,Cooker,Apple,September/October,Sour
+23,-2.27894,50.91642,Orchard,Tremletts Bitter,Cider,Apple,September,Sweet
+24,-2.27885,50.91646,Orchard,Wagener,Eater/Cooker,Apple,October/November/December,"Sharp, sweet, honeyed"
+25,-2.27876,50.9165,Orchard,Jules Guyot,Eater/Cooker,Pear,August,"Sweet, musk"
+26,-2.27867,50.91654,Orchard,Suntan,Eater,Apple,September/October,"Sweet, sharp"
+27,-2.27859,50.91657,Orchard,Ovid,Eater,Pear,October,Good flavour
+28,-2.27851,50.9166,Orchard,Early Laxton,Eater,Plum,July,Sweet
+29,-2.27902,50.91647,Orchard,Sweet Alford,Cider,Apple,September/October,Mild bittersweet
+30,-2.27893,50.91651,Orchard,Newton Wonder,Cooker/Juicer,Apple,November/December,Sour
+31,-2.27884,50.91655,Orchard,Merton Pride,Eater,Pear,September,"Juicy, big,  soft, smooth"
+32,-2.27875,50.91659,Orchard,Catillac,Cooker,Pear,September,big
+33,-2.27867,50.91662,Orchard,Concorde,Eater,Pear,September,
+34,-2.2786,50.91666,Orchard,Tydeman's Late Orange,Eater,Apple,December/January,Sharp
+35,-2.27897,50.9166,Orchard,Yellow Huffcap,Perry,Pear,October,Medium sharp
+36,-2.27887,50.91665,Orchard,Rosemary Russet,Eater/Juicer,Apple,October/November,Pear drop
+37,-2.27878,50.91669,Orchard,Severn Cross,Plum,Plum,August,
+38,-2.2787,50.91671,Orchard,Coe's Golden Drop,Plum,Plum,August,"Sweet, apricot"
+39,-2.27861,50.91674,Orchard,Dartmouth,Crab,Apple,November,
+40,-2.27898,50.91669,Orchard,Gin,Perry,Pear,September/October,Medium sharp
+41,-2.27888,50.91673,Orchard,Belle de Boskoop,Eater/Cooker,Apple,October,"Sweet, sharp"
+42,-2.27877,50.91677,Orchard,Coe's Golden Drop,Plum,Plum,August,"Sweet, apricot"
+43,-2.2787,50.91682,Orchard,Golden Noble,Cooker/Juicer,Apple,September,Sweet
+44,-2.27899,50.91678,Orchard,Malling Kent,Eater,Apple,October/November/December,Juicy
+45,-2.27889,50.91682,Orchard,Oullin's Gage,Gage,Plum,August,Sweet
+46,-2.2788,50.91686,Orchard,Crawley Beauty,Cooker,Apple,October,Sharp
+47,-2.27873,50.9169,Orchard,Winnal's Longdon,Perry,Pear,September,Medium sharp
+48,-2.27907,50.91683,Orchard,Vicar of Winkfield,Cooker,Pear,October,Sharp
+49,-2.279,50.91688,Orchard,Winston,Eater,Apple,December/January,Sweet
+50,-2.2789,50.91691,Orchard,Cambridge Gage,Gage,Plum,August,Sweet
+51,-2.2788,50.91696,Orchard,Monarch,Cooker,Apple,October/November,Sour
+52,-2.27882,50.91698,Orchard,Beurre Alexandra Lucas,Eater,Pear,October,Nice
+53,-2.27907,50.91691,Orchard,Josephine de Malines,Eater,Pear,October/November,"Juicy, sweet, floral"
+54,-2.279,50.91695,Orchard,Ashmead's Kernel,Eater,Apple,October,"Strong, sweet, sharp"
+55,-2.27892,50.91698,Orchard,Jargonelle,Eater,Pear,August,"Sweet, juicy"
+56,-2.27884,50.91701,Orchard,Parsonage,Perry,Pear,September,Buttery
+57,-2.27914,50.91698,Orchard,Stoke Red,Cider,Apple,October,Bittersharp
+58,-2.27907,50.91702,Orchard,Pitmaston Pineapple,Eater/Cooker,Apple,September,Pineapple flavour
+59,-2.279,50.91705,Orchard,Packhams Triumph,Eater,Pear,September,Musk
+60,-2.27889,50.91706,Orchard,Moorcroft,Perry,Pear,September,Vintage
+61,-2.2792,50.91703,Orchard,Bulmers Foxwhelp,Cider,Apple,September,Full bittersharp
+62,-2.27913,50.91707,Orchard,Harry Master's Jersey,Cider,Apple,September/October,Bittersweet
+63,-2.27906,50.91711,Orchard,Red Pear,Perry,Pear,September,Sweet
+64,-2.27896,50.91712,Orchard,Dabinett,Cider,Apple,October,Bittersweet
+65,-2.2795,50.91701,Paddock,Thorn,Perry,Pear,September,Delicious
+66,-2.27941,50.91705,Paddock,Easter Beurre,Eater,Pear,October,"Sweet, musk"
+67,-2.27932,50.91709,Paddock,Broxwood Foxwhelp,Cider,Apple,September,Bittersharp
+68,-2.27923,50.91713,Paddock,Frederick,Cider,Apple,September,Full sharp
+69,-2.27914,50.91717,Paddock,Golden Hornet,Crab,Apple,September,
+70,-2.27961,50.91704,Paddock,Oldfield,Perry,Pear,September,
+71,-2.27952,50.91708,Paddock,Ashmead's Kernel,Eater,Apple,October,"Strong, sweet, sharp"
+72,-2.27943,50.91712,Paddock,Fillbarrel,Cider,Apple,October,Bittersweet
+73,-2.27934,50.91716,Paddock,Court Pendu Plat,Eater/Juicer,Apple,October,Pear drop
+74,-2.27925,50.9172,Paddock,Browns Apple,Cider,Apple,October,Sharp

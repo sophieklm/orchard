@@ -6,7 +6,7 @@ from collection.models import Tree
 
 class TreeAdmin(admin.ModelAdmin):
     model = Tree
-    list_display = ('variety', 'fruit', 'type', 'harvest', 'taste', 'description',)
+    list_display = ('variety', 'fruit', 'type', 'harvest', 'field', 'taste', 'description','position')
     prepopulated_fields = { 'slug': ('variety',)}
 
 admin.site.register(Tree, TreeAdmin)
