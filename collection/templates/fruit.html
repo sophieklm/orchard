@@ -7,7 +7,7 @@
     <h1>Fruit</h1>
     <div class="tree">
         <div class="row">
-        <h2 class="col-md-12">Apples</h2>
+        <h2 class="col-md-12 apples">Apples</h2>
             {% for apple in apples %}
             <div class="col-md-4">
                 <h3>
@@ -15,12 +15,12 @@
                         {{ apple.variety }}
                     </a>
                 </h3>
-                <p>{{ apple.type }}</p>
-                <p>{{ apple.harvest }}</p>
-                <p>{{ apple.taste }}</p>
+                <p>Type: {{ apple.type }}</p>
+                <p>Harvest: {{ apple.harvest }}</p>
+                <p>Taste: {{ apple.taste|default:"---" }}</p>
             </div>
         {% endfor %}
-        <h2 class="col-md-12">Pears</h2>
+        <h2 class="col-md-12 pears">Pears</h2>
             {% for pear in pears %}
             <div class="col-md-4">
                 <h3>
@@ -28,12 +28,12 @@
                         {{ pear.variety }}
                     </a>
                 </h3>
-                <p>{{ pear.type }}</p>
-                <p>{{ pear.harvest }}</p>
-                <p>{{ pear.taste }}</p>
+                <p>Type: {{ pear.type }}</p>
+                <p>Harvest: {{ pear.harvest }}</p>
+                <p>Taste: {{ pear.taste|default:"---" }}</p>
             </div>
         {% endfor %}
-        <h2 class="col-md-12">Plums</h2>
+        <h2 class="col-md-12 plums">Plums</h2>
             {% for plum in plums %}
             <div class="col-md-4">
                 <h3>
@@ -41,9 +41,9 @@
                         {{ plum.variety }}
                     </a>
                 </h3>
-                <p>{{ plum.type }}</p>
-                <p>{{ plum.harvest }}</p>
-                <p>{{ plum.taste }}</p>
+                <p>Type: {{ plum.type }}</p>
+                <p>Harvest: {{ plum.harvest }}</p>
+                <p>Taste: {{ plum.taste|default:"---" }}</p>
             </div>
         {% endfor %}
         </div>
